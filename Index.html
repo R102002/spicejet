@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/r.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <img src="img/Spicejetlogo.svg">
+        </div>
+        <div class="right">
+            <ul>
+                <li>Hotels</li>
+                <li class="dp">
+                    Add-ons
+                    <div class="dropdown">
+                        <section>
+                            <a href="#">SpiceMAX</a>
+                            <a href="#">Seat + Meal Combo</a>
+                            <a href="#">Priority Check-in</a>
+                            <a href="#">Visa Services</a>
+                            <a href="#">Spice Assurance</a>
+                            <a href="#">Friends and Family</a>
+                            <a href="#">Student Discount</a>
+                        </section>
+                        <section>
+                            <a href="#">Hot Meals</a>
+                            <a href="#">You-1st</a>
+                            <a href="#">International Collection Baggage</a>
+                            <a href="#">MyFlexiPlan</a>
+                            <a href="#">Travel Insurance</a>
+                            <a href="#">Senior Citizen Discount</a>
+                            <a href="#">Extra Seat</a>
+                        </section>
+                    </div>
+                </li>
+                <li>Deals</li>
+                <li>Gift card</li>
+                <li>SpiceClub</li>
+                <li>SpiceScreen</li>
+                <li>|</li>
+                <li>Cargo</li>
+                <li>SpaceStyle</li>
+                <li>SpiceShuttle</li>
+                <li>Charter</li>
+                <li>Login  |  SignUp</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="banner">
+            <img src="img/backimgspicejet.jpg">
+        <div class="box">
+            <div class="tab-click">
+                <div><a href="#flights" class="activeb">Flights</a></div>
+                <div><a href="#checkin">Check-In</a></div>
+                <div> <a href="#status">Flight Status</a></div>
+                <div> <a href="#booking">Manage Booking</a></div>
+            </div>
+            <div class="content">
+                <div id="flights" class="tab active">Welcome Aboard</div>
+                <div id="checkin" class="tab">Web Check-In</div>
+                <div id="status" class="tab">Flight Status</div>
+                <div id="booking" class="tab">tfytg</div>
+            </div>
+        </div>
+        </section>       
+        <section class="s3">
+           <div class="plugin">Delhi Terminal Update: With effect from October 31, 2021,
+                all SpiceJet domestic flights to/from Delhi with 4 digits flight numbers starting with “8” will depart from/arrive at Terminal 3. 
+                Other domestic flights to/from Delhi will operate from Terminal 1. 
+                International flights to/from Delhi will continue to operate from Terminal 3. 
+                Please check terminal details of your flight before leaving for the airport.
+           </div>
+        </section>   
+        <div class="Im">I Am Here For...</div>
+        <div>
+            <img src="img/dealshome.png">
+            <img src="img/covid.png">
+            <img src="img/screen.png">
+        </div>
+    </main>
+    <footer></footer>
+    <script>
+     $(document).ready(function(){
+
+        // menu dropdown
+        $('.dropdown section').css('display','none');
+        $('.dp').mouseenter(function(){
+            $('.dropdown').addClass('dropshow');
+            $('.dropdown section').css('display','block');
+        });
+        $('.dp').mouseleave(function(){
+            $('.dropdown').removeClass('dropshow');
+            $('.dropdown section').css('display','none');
+        });            
+
+
+        // main
+        $('.box .tab-click a').click(function(a){
+            a.preventDefault();
+
+            $('.box .tab-click a').removeClass('activeb');
+            $(this).addClass('activeb');
+
+            $('.content .tab').removeClass('active');
+            $($(this).attr('href')).addClass('active');
+        });
+       
+
+        });
+           
+        
+    
+     
+
+       
+    </script>
+    </div>
+
+</body>
+</html>
