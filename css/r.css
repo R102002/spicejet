@@ -127,11 +127,12 @@ div button{
     float: left;
     font-size: larger;
    display: block;
-   
 }
-.activeb a{
+.activeb{
     background-color: brown;
 }
+
+
 .content{
     height: auto;
     width: 100%;
@@ -158,20 +159,46 @@ section a {
      padding-top: 20px;
      
  }
- div.Im{
+ .here{
+     height: auto;
+     width: 100%;
+     float: left;
+ }
+ .here .im{
      color:rgb(194, 18, 18);
      font-size: 30px;
-     padding-top: 20px;
      text-align: center;
+     display: block;
+     padding-bottom: 20px;
+     padding-top: 50px;
+     float: left;
+     height: auto;
+     width: 100%;
 
+ }
+
+ .here img{
+    display: block;
+ }
+ .here .container{
+     display: flex;
+     justify-content: space-evenly;
+     text-align: center;
+     float: left;
+     width: 100%;
  }
   .s3 .plugin{
      padding-top: 20px;
      
  }
+ .here span{
+    display: block;
+    padding-top: 10px;
+ }
 .content .active{
     display: block  ;
 }
+
 
 
 
