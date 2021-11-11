@@ -5,7 +5,7 @@
     color: white;
     justify-content: center;
     float: left;
-    padding-top: 10px;
+    padding-top: 10px;o
     padding-bottom: 50px;
 }
 .header img{
@@ -28,6 +28,12 @@
    justify-content: center;
       
 } */
+
+.page-base{
+    width: 1110px;
+    justify-content: space-evenly;
+    padding-left: 100px;
+}
 
 header{
     background-color: crimson;
@@ -102,8 +108,9 @@ footer{
     float: left;
     position: relative;
 }
-.banner img{
+.banner .bgimage{
     width: 100%;
+    
 }
 .banner .box{
     height: 80%;
@@ -177,6 +184,7 @@ section a {
 
  }
 
+
  .here img{
     display: block;
  }
@@ -194,10 +202,49 @@ section a {
  .here span{
     display: block;
     padding-top: 10px;
+    padding-bottom: 40px;
+   
  }
 .content .active{
     display: block  ;
 }
+section.promo{
+  background-color: lightgray;
+  float: left;
+  width: 100%;
+  height: auto;
+}
+.page-base h2{
+    color: brown;
+    font-size: 30px;
+    padding-top: 40px;
+}
+.promo{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.base1 {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.promo  .base1 div{
+    border:1px solid rgb(194, 18, 18);
+    border-radius: 5px;
+   float: left;
+   justify-content: space-between;
+   
+   
+   
+}
+.base1 div{
+    height:150px;
+    width: 350px;
+    background-color: white;
+    
+}
+
 
 
 

@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/r.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
@@ -55,7 +56,13 @@
     </header>
     <main>
         <section class="banner">
+        <div class="bgimage">
             <img src="img/backimgspicejet.jpg">
+            <img src="img/TerminalD.jpg">
+            <img src="img/GiftCardD.jpg">
+            <img src="img/OneBillion.jpg">
+
+        </div>
         <div class="box">
             <div class="tab-click">
                 <div><a href="#flights" class="activeb">Flights</a></div>
@@ -73,40 +80,56 @@
         </section>       
        
         <section class="here">
-            <div class='im'>I Am Here For you...</div>
-            <div class="container">
-                <div>
-                    <img src="img/dealshome.png">
-                    <span>Deals</span>
+            <div class="page-base">
+                <div class='im'>I Am Here For you...</div>
+                <div class="container">
+                    <div>
+                        <img src="img/dealshome.png">
+                        <span>Deals</span>
+                    </div>
+                    <div>
+                        <img src="img/covid.png">
+                        <span>Covid Info</span>
+                    </div>
+                    <div>
+                        <img src="img/screen.png">
+                        <span>Spice Screen</span>
+                    </div>
+                    <div>
+                    <img src="img/activities.png" >
+                        <span>Activities</span>
+                    </div>
+                    <div>
+                        <img src="img/chng.png" >
+                        <span>Change Assist</span>
+                    </div>
+                    <div>
+                        <img src="img/gst.png" >
+                        <span>GST Invoice</span>
+                    </div>
                 </div>
-                <div>
-                    <img src="img/covid.png">
-                    <span>Covid Info</span>
-                </div>
-                <div>
-                    <img src="img/screen.png">
-                    <span>Spice Screen</span>
-                </div>
-                <div>
-                   <img src="img/activities.png" >
-                    <span>Activities</span>
-                </div>
-                <div>
-                    <img src="img/chng.png" >
-                     <span>Change Assist</span>
-                 </div>
-                 <div>
-                    <img src="img/gst.png" >
-                     <span>GST Invoice</span>
-                 </div>
-               
+             </div>
+        </section>
+        <section class="promo">
+            <div class="page-base">
+                <h2>Irresistible Promotions & Deals</h2>
+                <div class="base1">
+                    <div>Enjoy ADDONS at
+                        Upto
+                        25% Off
 
-                
-               
+                        ADDON25
+                        Valid till:December 31, 202
+                    </div>
+                    <div>MOBIKWIK CASHBACK Offer</div>
+                    <div>Stay at The LaLiT</div>
+                </div>
             </div>
         </section>
     </main>
     <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
      $(document).ready(function(){
 
@@ -132,7 +155,13 @@
             $('.content .tab').removeClass('active');
             $($(this).attr('href')).addClass('active');
         });
-       
+        $('.bgimage').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll:1,
+        arrows:false,
+        autoplay:true
+})
 
         });
          
