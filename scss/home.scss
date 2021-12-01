@@ -204,30 +204,21 @@ main{
             padding-top: 40px;
             font-family:montserrat-regular;
         }
-        .base1{
-            
+        .base1{  
             display: flex;
             padding: 15px 0px 0px;
             height: 170px;
             border-radius: 6px;
             justify-content: space-between;
 
-            
-            
-            
-            
-            
             div{
                 border:1px solid rgb(194, 18, 18);
                 border-radius: 5px;
                 float: left;
                 position: relative;
                 height: auto;
-               width: calc((100% - 50px) / 3);
+                width: calc((100% - 50px) / 3);
                 background-color: white;
-                
-               
-                
             }
             .sp{
                 h2{
@@ -347,6 +338,7 @@ main{
         height:auto;
         width: 100%;
         float: left;
+        padding-bottom: 30px;
 
         h2{
             color: brown;
@@ -354,59 +346,249 @@ main{
             font-family:montserrat-regular;
             font-size: 26px;
             padding-top: 18px;
-            
         }
-
         .imgs{
              display: flex;
              padding-top: 10px;
-
+             justify-content: space-between;        
         
-        .max{
-            padding: 15px 0px 0px;
-             margin: 5px;
-            border: 1px solid #ccc;
-            float: left;
-            
-
-            img{
-                height: auto;
-                width: 338px;
-                float: left;
-                padding-left: 10px;
-                padding-right: 10px;
+            .max{
+                padding: 15px 0px 0px;
                 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-               
-               
-               
-            }
-            .content1{
-                padding: 0px 10px 0px;
-                color: brown;
-                font-family:montserrat-regular ;
-                font-size: 22px;
+                float: left;
+                justify-content: space-between;
+                width: calc(( 100% - 50px ) /3);
+            
+                img{
+                    height: auto;
+                    width: 338px;
+                    float: left;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                }
+                .content1{
+                    padding: 0px 10px 0px;
+                    color: brown;
+                    font-family:montserrat-regular ;
+                    font-size: 22px;
+                }
+                    
+                    span{
+                        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        padding-bottom: 10px;
+                        font-size: 14px;
+                        line-height: 20px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        box-sizing: border-box;
+                        text-size-adjust: 100%;
+                        text-align: start;
+                        display: block;
+                    }                
                 
-              
-                
-            }
-           span{
-                font-family: sans-serif;
-                padding: 10px;
-                display:inline-block ;
-                font-size: 14px;
-                
-
-               
-            }
-        }
-          
+            }  
         }
     }
+    .Plan{
+        height:auto;
+        width: 100%;
+        background-color: #F8F8F8;
+        float: left;
+
+        .travel{
+            display: flex;
+            padding: 30px 0px 0px;
+            height: 133px;
+            border-radius: 6px;
+            justify-content: space-between;
+            padding-bottom: 30px;
+           
+
+            h2{
+                color: brown;
+                font-size: 26px;
+                font-family:montserrat-regular;
+                padding-top: 50px;
+                align-items: flex-start;
+                justify-content: center;
+                
+                
+            }
+            h3{
+                font-size: 22px;
+                color: black;
+                font-weight: bold;
+                padding-top: 26px;
+                padding-left: 10px;
+                padding-bottom: 20px;
+                font-family:montserrat-regular;
+              
+            }
+            div{
+                float: left;
+                position: relative;
+                height: auto;
+                width: calc((100% - 254px)/3);
+                background-color: white;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            }
+            span{
+                font-family: montserrat-regular;
+                text-size-adjust: 100%;
+                text-decoration-style: wavy;
+                font-size: 15px;
+                color: #424242;
+                display: block;
+                padding-left: 10px;         
+            }
+        }    
+    }
+    .loyal{
+        height:auto;
+        width: 100%;
+        padding-bottom: 30px;
+        display: flex;
+
+        h2{
+            color: brown;
+            font-size: 26px;
+            font-family:montserrat-regular;
+            font-size: 26px;
+            padding-top: 18px;
+            padding-bottom: 10px;
+            
+        }
+        .maindiv{
+            display: flex;
+        
+            .access{ 
+                display: flex;
+                height: auto;
+                width: 60%;
+                position: relative;
+                
+                img{
+                   
+                    border-radius: 19px;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        
+                }
+                div{
+                    position: absolute;
+                    top: 71px;
+                    left: 15px;
+                    font-family:montserrat-regular;
+                    font-size: 17px;
+                    line-height: 20px;
+                    
+                }
+                button{
+                   bottom: 94px;
+                   left: 16px;
+                    border-width: 2px;
+                    border-color: rgb(195, 11, 18);
+                    border-style: solid;
+                    border-radius: 4px;
+                    position: absolute;
+                    cursor: pointer;
+                    font-family:montserrat-regular;
+                    color: rgb(195, 11, 18);
+                    background-color: transparent;
+                    width: fit-content;
+                }
+            }
+            .member{
+                height: auto;
+                width: 40%;
+                h3{
+                    font-family:montserrat-regular;
+                    font-size: 22px;
+                    position: relative;
+                    text-align: center;
+                }
+                .voucher{
+                    display: flex;
+                    justify-content: center;
+                    justify-content: center;
+                    
+                    img{
+                        height: 60px;
+                        width: 60px;
+                        padding-left: 48px;
+                        padding-right: 20px;
+                        padding-top: 20px;
+                        position: relative;      
+                    }            
+                    span{
+                        display: block;
+                        padding-top: 10px;
+                        padding-left: 26px;
+                        padding-right: 20px;
+                        font-family:montserrat-regular;
+                        text-align: center;
+
+                    }
+                }
+                div.btn{
+                    display: flex;
+                    justify-content: center;
+                }
+                button{
+                    background-color: #F7941D;
+                    color: white;
+                    width: 150px;
+                    border-radius: 2px;
+                    border: 1px solid #F7941D;
+                    align-items: center;
+                    height: 40px;
+                     margin: 40px 0px;
+                    font-family: montserrat-regular;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+  
 }
+
 
 // footer content css
 footer{
     height: auto;
     width: 100%;
     float: left;
+
+    .call{
+        background-color: white;
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+      
+
+        section{
+
+            div.head{
+                font-size: 15px;
+                font-family:montserrat-regular ;
+                font-weight: 600;
+                
+            }
+            div.hr{
+                padding-top: 20px;
+            
+            a{
+                display: block;
+                font-size: 14px;
+                font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 'sans-serif' ;
+                margin: 6px;
+
+            }
+           
+            }
+            img{
+                padding-top: 20px;
+            }
+        }
+    }
 }
